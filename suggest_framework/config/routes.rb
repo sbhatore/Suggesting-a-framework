@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'sessions/new'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -10,6 +12,13 @@ Rails.application.routes.draw do
   get 'main_controller/admin' => 'main_controller#admin'
   get 'main_controller/saved_framework' => 'main_controller#saved_framework'
   get 'main_controller/view' => 'main_controller#view'
+  get 'main_controller/update' => 'main_controller#update'
+  get 'main_controller/edit' => 'main_controller#edit'
+  get 'main_controller/main_controller/view' => 'main_controller#view'
+  get 'main_controller/main_controller/index' => 'main_controller#index'
+  get 'main_controller/login' => 'main_controller#login'
+  get 'main_controller/authorize' => 'main_controller#authorize'
+
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 

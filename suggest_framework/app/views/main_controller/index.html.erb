@@ -8,14 +8,15 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-		<h1 style="font-family:impact;margin-left:4%;">Suggesting a Suitable Framework to Develop a Web Application</h1>
+		<a href="main_controller/login" style="margin-left: 90%;margin-top: 1%;" class="btn btn-primary">Admin</a>
+		<h1 style="font-family:impact;margin-left:4%;margin-top: 2%;">Suggesting a Suitable Framework to Develop a Web Application</h1>
 		<div style="margin-left:10%;">
 			<h3>1. What is the programming language you want to code in ?</h3>
 			<form action="main_controller/view" id="usrform">
 			  <input type="checkbox" name="language[]" value="Ruby"> Ruby<br>
 			  <input type="checkbox" name="language[]" value="Python"> Python<br>
 			  <input type="checkbox" name="language[]" value="Java"> Java <br>
-			  <input type="checkbox" name="language[]" value="JavaScript"> JavaScript<br>
+			  <input type="checkbox" name="language[]" value="Javascript"> Javascript<br>
 			  <input type="checkbox" name="language[]" value="C#"> C#<br>
 			  <input type="checkbox" name="language[]" value="PHP"> PHP<br>
 			  <input type="checkbox" name="language[]" value="Other" checked> Any of the above   
@@ -23,6 +24,7 @@
 				<input type="checkbox" name="license[]" value="MIT"> MIT<br>
 				<input type="checkbox" name="license[]" value="Apache 2.0"> Apache 2.0<br>
 				<input type="checkbox" name="license[]" value="BSD License"> BSD License<br>
+				<input type="checkbox" name="license[]" value="New BSD"> New BSD<br>
 				<input type="checkbox" name="license[]" value="LGPL"> LGPL<br>
 				<input type="checkbox" name="license[]" value="3-Clause BSD"> 3-Clause BSD<br>
 				<input type="checkbox" name="license[]" value="Other" checked> Any of the above
@@ -80,7 +82,16 @@
 			    <option value="Microsoft Azure">Microsoft Azure</option>
 			    <option value="Modulus">Modulus</option>
 			    <option value="Somee">Somee</option>
+			    <option value="Cloudbees">Cloudbees</option>
+			    <option value="AWS Elastic Beanstalk">AWS ELastic Beanstalk</option>
+			    <option value="A2Hosting">A2Hosting</option>
+			    <option value="Hostt">Hostt</option>
+			    <option value="HostFace">HostFace</option>
+			    <option value="Meteor Application Platform for Developers">Meteor Application Platform for Developers</option>
+			    <option value="Fortrabit">Fortrabit</option>
+			    <option value="FastComet">FastComet</option>
 			    <option value="Other">Other</option>
+
 			  </select>
 			
 				<h3>4. In what time do you hope to finish learning the fundamentals of the framework ? </h3>
@@ -122,7 +133,7 @@
 				<input type="checkbox" name="database[]" value="H Base"> H Base<br>
 				<input type="checkbox" name="database[]" value="SqlAlchemy">SqlAlchemy <br>
 				<input type="checkbox" name="database[]" value="FireBase">FireBase <br>
-				<input type="checkbox" name="database[]" value="Aerospike">Aerospike <br>
+				<input type="checkbox" name="database[]" value="AeroSpike">AeroSpike <br>
 				<input type="checkbox" name="database[]" value="JSON">JSON <br>
 				<input type="checkbox" name="database[]" value="MariaDB">MariaDB <br>
 				<input type="checkbox" name="database[]" value="LINQ to SQL">LINQ to SQL <br>
@@ -130,6 +141,8 @@
 				<input type="checkbox" name="database[]" value="CouchBase">ouchBase <br>
 				<input type="checkbox" name="database[]" value="LevelDB">LevelDB <br>
 				<input type="checkbox" name="database[]" value="Elastic Search">Elastic Search <br>
+				<input type="checkbox" name="database[]" value="Sybase">Sybase <br>
+				<input type="checkbox" name="database[]" value="SQLAnywhere">SQLAnywhere <br>
 				<input type="checkbox" name="database[]" value="Any" checked> Any of the above
 			
 				<h3> 6. What Design patterns do you want to use in your application ?</h3>
@@ -137,6 +150,7 @@
 				<input type="checkbox" name="patterns[]" value="MVC">MVC<br>
 				<input type="checkbox" name="patterns[]" value="MVVC">MVVC<br>
 				<input type="checkbox" name="patterns[]" value="MVT">MVT<br>
+				<input type="checkbox" name="patterns[]" value="MVVC">MVVM<br>
 				<input type="checkbox" name="patterns[]" value="ServiceObjects">ServiceObjects<br>
 				<input type="checkbox" name="patterns[]" value= "Value Objects"> Value Objects<br>
 				<input type="checkbox" name="patterns[]" value="Form Objects">Form Objects<br>
